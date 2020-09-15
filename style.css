@@ -1,0 +1,27 @@
+.duh {
+	background: linear-gradient(-45deg,#eebd52, #ee7752, #ff1f75, #f81fff, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+body{
+    background-image: url("F1seb.png");
+    background-size: cover;
+}

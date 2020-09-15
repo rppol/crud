@@ -16,22 +16,29 @@ if (!empty($_GET['msg'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
+
 <?php include 'partial/head.php';?>
-<body>
+<body class = "car">
    <?php include 'partial/nav.php';?>
+   <div class="text-center text-light font-weight-bold">
+       <h1></h1>
+      <h1>Which Team are you supporting? </h1>
+      <h2>Click Add New to show your Support</h2>
+    </div>
     <div class="container">
 <?php if (!empty($alert_msg)) {?>
         <div class="alert alert-success"><?php echo $alert_msg; ?></div>
 <?php }?>
     <div class="info"></div>
-        <table class="table table-dark table-hover table-striped">
-            <thead>
+        <table class="table table-light table-hover table-striped">
+            <thead class = "bg-danger">
                 <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
-                <th scope="col">Gender</th>
+                <th scope="col">Team</th>
                 <th scope="col">Email</th>
-                <th scope="col">Course</th>
+                <th scope="col">Track</th>
                 <th scope="col">Action</th>
 
                 </tr>
